@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="favicon" href="resources/img/quotesicon.webp">
         <title>Quoted - Citas entre escritores y lectores</title>
-        <link rel="stylesheet" href="../QUOTED/css/estilos.css">
+        <link rel="stylesheet" href="../css/estilos.css">
 
 <!--Link de fuentes-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,13 +19,14 @@
 
 <body>
 
+
 <!--COMIENZO DE HEADER-CONTAINER-->
 
 <header id="header-container">
 
 <div class="logo">
-        <a href="#">
-        <img class="logo-imagen" src="../QUOTED/resources/img/quotedlogo.png" alt="Logo de comillas"></a>
+        <a href="../index.html">
+        <img class="logo-imagen" src="../resources/img/quotedlogo.png" alt="Logo de comillas"></a>
     </div>
 
     <div class="encabezado">
@@ -71,78 +72,65 @@
 
     <div class="navbar">
         <ul>
-            <li><a href="../QUOTED/index.html">Inicio</a></li>
-            <li><a href="../QUOTED/pages/makeaquote.html">Hacer una cita</a></li>
-            <li><a href="../QUOTED/pages/quotereading.html">Leer una cita</a></li>
-            <li><a href="../QUOTED/pages/aboutus.html">Sobre nosotros</a></li>
-            <li><a href="../QUOTED/pages/contactus.html">Contacto</a></li>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../pages/makeaquote.html">Hacer una cita</a></li>
+            <li><a href="../pages/quotereading.html">Leer una cita</a></li>
+            <li><a href="../pages/aboutus.html">Sobre nosotros</a></li>
+            <li><a href="../pages/contactus.html">Contacto</a></li>
         </ul>
     </div>
 
 </div>
 </header>
 
+<!--COMIENZO MAKEAQUOTE-->
 
-<!--COMIENZO DE MAIN-CONTAINER-->
-<main id="main-container">
+<section id="makeaQuote">
 
-<section class="bajada">
-    <div class="main-bienvenida">
-        <h2>Te damos la bienvenida</h2>
-        <p>Los citadinos de Quoted nos reunimos en esta Babel digital para continuar el legado de Alejandría. Cultivamos el arte de la cita literaria de manera horizontal y colaborativa. Vos también podés ser un copista del nuevo milenio.</p>
-    </div>
+<div class="bajada">
+<h2>HACER UNA CITA</h3><br>
+    <p>Te invitamos a compartir una cita literaria de la forma en que lo prefieras</p></div>
+<div class="hacerCita"></div>        
+<form method="get" class="formulariocita">
+    <!--Introducir cita-->
+<fieldset>
+    <legend>Subir una cita</legend>
+    <label for="nombre">Nombre:</label><br>	
+    <input type="text" name="nombre" placeholder="Tu nombre"><br>
+    <textarea rows="4" cols="20">Escribe tu cita preferida</textarea><br>
+    <br>
+    <label for="autor">Autor/a:</label><br>
+    <input type="text" name="autor" placeholder="Autor/a de la cita"><br>
+    <label for="libro">Libro:</label><br>
+    <input type="text" name="libro" placeholder="Indica el origen de la cita"><br>
+
+<!--Catalogación-->
+<b>Indica el género de la cita</b><br>
+<div>Narrativa</div>
+    <input type="radio" name="genero" value="Narrativa"><br>
+    <div>Poesía</div>
+    <input type="radio" name="genero" value="Poesía"><br>
+    <div>Teatro</div>
+    <input type="radio" name="genero" value="Teatro"><br>
+    <div>Canción</div>
+    <input type="radio" name="genero" value="Canción"><br>
+<br>
+    <textarea rows="4" cols="20">Danos tu parecer sobre la cita o lo que su lectura te produjo</textarea><br>
+
+<!--Botones-->
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpiar">
+    <input type="button" value="Sin acciones">
+</fieldset>
+</form>
 </section>
-
-<section class="audio">
-    <div class="saber">
-        <button class="saber-autor">
-            <a href="https://es.wikipedia.org/wiki/Jorge_Luis_Borges" target="_blank">
-            <i class="fa-solid fa-feather"></i> <br> Sobre el autor</a>
-        </button>
-    
-        <button class="saber-obra">
-            <a href="https://es.wikipedia.org/wiki/Poema_de_los_dones" target="_blank">
-            <i class="fa-brands fa-wikipedia-w"></i> <br>
-            Sobre la obra</a>
-        </button>
-    </div>
-    <div class="main-reproductor">
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/6QURv32F5hTp9V60ufYxtr?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>    
-    </div>   
-        
-    
-</section>
-
-<section class="poema">
-    <div class="main-texto">
-        <h4>Cita del mes <br> Poema de los dones <br> (Jorge Luis Borges)</h4>
-        <pre>
-            (...) En vano el día
-            les prodiga sus libros infinitos,
-            arduos como los arduos manuscritos
-            que perecieron en Alejandría.
-            (...)
-            Enciclopedias, atlas, el Oriente
-            y el Occidente, siglos, dinastías,
-            símbolos, cosmos y cosmogonías
-            brindan los muros, pero inútilmente.
-            
-            Lento en mi sombra, la penumbra hueca
-            exploro con el báculo indeciso,
-            yo, que me figuraba el Paraíso
-            bajo la especie de una biblioteca.
-        </pre>
-    </div>
-</section>
-
-</main>
 
 <!--COMIENZO DE FOOTER-->
 <footer id="footer-container">
     
     <div class="footer-logo">
             <a href="../QUOTED/pages/contactus.html">
-            <img class="footer-img" src="../QUOTED/resources/img/quotedlogo.png" alt="Logo de comillas"></a>
+            <img class="footer-img" src="../resources/img/quotedlogo.png" alt="Logo de comillas"></a>
     </div>
         
     <div class="footer-disclaimer">
