@@ -493,7 +493,7 @@ color: white;
 
 .footer-redes {
     display: none;
-}
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -603,14 +603,30 @@ color: white;
 }
 }
 
+@media only screen and (max-width: 870px) {
+    .logo-imagen {
+        padding-left: 10px;
+        max-width: 180px;
+        max-height: 130px;
+    }
+    
+    .footer-img {
+    padding-top: 10px;
+    }
+
+    .encabezado p {
+        display: none
+    }
+}
+
 @media only screen and (max-width: 900px) {
-.logo-imagen {
+    .logo-imagen {
     padding-left: 10px;
     max-width: 180px;
     max-height: 130px;
-}
+    }
 
-.footer-img {
-padding-top: 10px;
-}
+    .footer-img {
+    padding-top: 10px;
+    }
 }
