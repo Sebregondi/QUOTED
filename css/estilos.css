@@ -1,0 +1,604 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ol {
+    list-style-type: none;
+}
+ul {
+    list-style-type: none;
+}
+
+#header-container {  
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 150px 40px;    
+    grid-auto-flow: row;
+    grid-template-areas:
+    "logo encabezado redes"
+    "navbar navbar navbar";
+    background-image: url(../resources/Backgrounds/Estanteria.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    /*margin-bottom: 2px;*/
+}
+
+.logo { 
+    grid-area: logo;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.logo-imagen {
+    max-width: 200px;
+    max-height: 150px;
+    margin-top: 10px;
+    padding-right: 20px;
+    padding-top: 20px;
+    }
+
+.encabezado {
+    grid-area: encabezado;
+    display: flex;
+    flex-flow: column wrap;
+    color: black;
+    text-align: center;
+    font-family: 'Fanwood Text';
+}
+
+.encabezado h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.encabezado p {
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    font-weight: lighter;
+    padding-top: 15px;
+}
+
+.redes { /*REDES - FLEXBOX*/
+    grid-area: redes;  
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ig {width: 40px; height: 40px;}
+
+.fb {width: 40px; height: 40px;}
+
+.tw {width: 40px; height: 40px;}
+
+.yt {width: 40px; height: 40px;}
+
+.burger {display: none;}
+
+.navbar {
+    grid-area: navbar;
+    grid-column: 1/4;
+    margin-top: 5px;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: inline;
+    justify-content: space-evenly;
+}
+
+.navbar ul {
+    grid-area: navbar;
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+}
+
+.navbar li {
+    display: inline;
+    font-family: 'Roboto Condensed';
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px 0 0;
+}
+
+.navbar a {
+    padding: 2px 7px 2px 7px;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+/*COMIENZO MAIN-CONTAINER*/
+
+#main-container {  
+    background-image: url(../resources/Backgrounds/princess.jpg);
+    width: 100%;
+    height: fit-content;
+    background-position: top;
+    background-size: auto;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.main-bienvenida {
+    padding-left: 10px;
+    color: white;
+    grid-column: 1/2;
+}
+
+.main-bienvenida h2 {
+    margin-top: 10px;
+    font-family: 'Fanwood Text';
+    text-align: center; 
+    font-size: 40px;
+    
+}
+
+.main-bienvenida p {
+    margin-top: 30px;
+    font-family: 'Roboto Condensed';
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.poema {
+    grid-column: 3/4;
+    grid-row: 1;
+    background-image: linear-gradient(to right, #5f5e5e, white);
+    border: none;
+    border-radius: 10px;
+    /*margin-top: 10px;
+    padding-top: 20px;*/
+}
+
+.main-texto h4 {
+    padding-top: 10px;
+    /*padding-bottom: 20px;*/
+    font-family: 'Fanwood Text';
+    font-size: x-large;
+    text-align: center;
+}
+
+.main-texto pre {
+    font-style: italic;
+    font-family: 'Fanwood Text';
+    flex-wrap: wrap;
+}
+
+.audio {
+    /*margin-top: 10px;*/
+    grid-column: 3/4;
+    overflow: hidden;
+}
+
+.saber {
+/*margin-top: 10px;*/
+text-align: left;
+}
+
+.saber-autor {
+    background-color: rgb(95, 94, 94);
+    border: none;
+    border-radius: 10px;
+}
+
+.saber-obra {
+    background-color: rgb(95, 94, 94);
+    border: none;
+    border-radius: 10px;
+}
+
+.saber a{
+    text-decoration: none;
+    font-family: 'Fanwood Text';
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.saber a:hover {
+background-color: black;
+color: white;
+}
+
+/*COMIENZO FOOTER-CONTAINER*/
+
+#footer-container { 
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "footlogo disclaimer footredes";
+    background-color: rgb(71, 71, 71);
+    background-image: url(../resources/Backgrounds/Estanteria.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: max-content;
+    /*border: solid 1px black;*/
+    /*margin-top: 20px;*/
+    text-align: center; 
+}
+
+.footer-logo {
+    grid-area: footlogo;
+    overflow: hidden;
+    display: inline;
+    font-family: 'Roboto Condensed';
+}
+
+.footer-img {
+    /*margin-top: 10px;*/
+    max-width: 100px;
+    max-height: 100px;
+    display: inline;
+}
+
+.footer-disclaimer {
+    grid-area: disclaimer;
+    font-family: 'Roboto Condensed';
+    font-size: medium;
+}
+
+.footer-redes {
+    grid-area: footredes;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*Estilo de citas*/ 
+
+.citas-container {
+    background-image: url(../resources/Backgrounds/ggt.jpg);
+    font-family: 'Roboto Condensed';
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+}
+
+.citas__texto h2 {
+    font-family: 'Fanwood Text';
+    font-weight: 800;
+    text-align: center;
+}
+
+.citas__texto p {
+    font-family: "Fanwood Text";
+    font-size: 20px;
+    text-align: center;
+}
+.citas__texto li {
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+}
+
+.citas__texto a {
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.citas__texto h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+/*Make a Quote*/
+
+.hacer__cita h2 {
+    font-family: 'Fanwood Text';
+    font-weight: 800;
+    text-align: center;
+}
+
+.hacer__cita p {
+    font-family: "Fanwood Text";
+    font-size: 20px;
+    text-align: center;
+}
+
+.formulariocita {
+    text-align: left;
+    background-image: url(../resources/Backgrounds/princess.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Roboto Condensed';
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+}
+
+
+/*ESTILO PARA PÁGINA DE CONTACTO*/
+#main-contacto {
+    background-image: url(../resources/Backgrounds/readonbench.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: repeat-x;
+    font-family: 'Roboto Condensed';
+    color: white
+}
+
+.formulariocontacto {
+    font-family: "Fanwood Text";
+    font-size: 30px;
+    text-align: left;
+}
+
+.botones-contacto {
+    font-family: "Roboto Condensed";
+    font-size: 20px;
+    border: solid 2px white;
+}
+
+/*ESTILO PARA PÁGINA ABOUT*/
+
+.main-about {
+    background-image: url(../resources/Backgrounds/fullmetallibrary.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+.main-about h2 {
+    font-family: 'Fanwood Text';
+    font-weight: 800;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.main-about h3 {
+    font-family: "Fanwood Text";
+    font-size: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.main-about p {
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    line-height: 2;
+}
+
+@media only screen and (max-width: 480px) {
+
+    #header-container {
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    .encabezado p {
+        display: none
+    }
+
+    .navbar {
+        display: none;
+    }
+
+
+    .redes {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        /*justify-content: space-evenly;*/
+    }
+
+    .ig {
+        width: 40px;
+        height: 40px;
+        background-color: #a1a1a1;
+        border: solid 2px black;
+        border-radius: 10px;
+    }
+    
+    .fb { 
+        width: 40px;
+        height: 40px;
+        background-color: #a1a1a1;
+        border: solid 2px black;
+        border-radius: 10px;
+    }
+    
+    .tw { 
+        width: 40px;
+        height: 40px;
+        background-color: #a1a1a1;
+        border: solid 2px black;
+        border-radius: 10px;
+    }
+    
+    .yt { 
+        width: 40px;
+        height: 40px;
+        background-color: #a1a1a1;
+        border: solid 2px black;
+        border-radius: 10px;    
+    }
+
+    .burger {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: #a1a1a1;
+        border: solid 2px black;
+        border-radius: 10px;
+    }
+
+    #main-container {
+        display: flex;
+        flex-direction: column;
+        background-position: right;
+    }
+
+.main-bienvenida {
+    order: 1;
+    color: black;
+}
+
+.poema {
+        background-image: none;
+        order: 2;
+    }
+    
+.audio {
+        order: 3;
+    }
+
+#footer-container {
+    display: flex;
+    flex-flow: column nowrap;
+    height: max-content;
+}
+
+.footer-disclaimer {
+    font-size: 12px;
+}
+
+.footer-logo {
+    order: 1;
+    align-items: center;
+}
+
+.footer-disclaimer {
+    order: 2;
+    font-size: smaller;
+}
+
+.footer-redes {
+    display: none;
+}
+}
+
+@media only screen and (max-width: 600px) {
+
+    #header-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .encabezado p {
+        display: none
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: #a1a1a1;
+        border: solid 2px black;
+        border-radius: 10px;
+    }
+
+    .redes {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        justify-content: space-evenly;
+    }
+
+    .ig { 
+        width: 40px;
+        height: 40px;
+        background-color: #a1a1a1;
+        border: solid 2px black;
+        border-radius: 10px;
+    }
+    
+    .fb { 
+        width: 40px;
+        height: 40px;
+        background-color: #a1a1a1;
+        border: solid 2px black;
+        border-radius: 10px;
+    }
+    
+    .tw { 
+        width: 40px;
+        height: 40px;
+        background-color: #a1a1a1;
+        border: solid 2px black;
+        border-radius: 10px;
+    }
+    
+    .yt { 
+        width: 40px;
+        height: 40px;
+        background-color: #a1a1a1;
+        border: solid 2px black;
+        border-radius: 10px;    
+    }
+
+    #main-container {
+        display: flex;
+        flex-direction: column;
+        background-position: right;
+    }
+
+.main-bienvenida {
+    order: 1;
+    color: black;
+}
+
+    .poema {
+        background-image: none;
+        order: 2;
+    }
+    
+    .audio {
+        order: 3;
+    }
+
+#footer-container {
+    display: flex;
+    flex-flow: column nowrap;
+    height: max-content;
+}
+
+.footer-disclaimer {
+    font-size: 12px;
+}
+
+.footer-logo {
+    order: 1;
+    align-items: center;
+}
+
+.footer-disclaimer {
+    order: 2;
+    font-size: smaller;
+}
+
+.footer-redes {
+    display: none;
+}
+}
+
+@media only screen and (max-width: 900px) {
+.logo-imagen {
+    padding-left: 10px;
+    max-width: 180px;
+    max-height: 130px;
+}
+
+.footer-img {
+padding-top: 10px;
+}
+}
