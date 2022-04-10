@@ -135,11 +135,6 @@ ul {
     grid-template-rows: 1fr;
 }
 
-.bajada {
-
-    animate__backInLeft;
-}
-
 .main-bienvenida {
     padding-left: 10px;
     color: white;
