@@ -87,9 +87,6 @@
 
 <section id="makeaQuote">
 
-<div class="bajada">
-<h2>HACER UNA CITA</h3><br>
-    <p>Te invitamos a compartir una cita literaria de la forma en que lo prefieras</p></div>
 <div class="hacerCita"></div>        
 <form method="get" class="formulariocita">
     <!--Introducir cita-->
@@ -97,7 +94,7 @@
     <legend>Subir una cita</legend>
     <label for="nombre">Nombre:</label><br>	
     <input type="text" name="nombre" placeholder="Tu nombre"><br>
-    <textarea rows="4" cols="20">Escribe tu cita preferida</textarea><br>
+    <textarea rows="8" cols="40">Escribe tu cita preferida</textarea><br>
     <br>
     <label for="autor">Autor/a:</label><br>
     <input type="text" name="autor" placeholder="Autor/a de la cita"><br>
@@ -106,21 +103,21 @@
 
 <!--Catalogación-->
 <b>Indica el género de la cita</b><br>
-<div>Narrativa</div>
+<div class="formulariocita-small">Narrativa</div>
     <input type="radio" name="genero" value="Narrativa"><br>
-    <div>Poesía</div>
+    <div class="formulariocita-small">Poesía</div>
     <input type="radio" name="genero" value="Poesía"><br>
-    <div>Teatro</div>
+    <div class="formulariocita-small">Teatro</div>
     <input type="radio" name="genero" value="Teatro"><br>
-    <div>Canción</div>
+    <div class="formulariocita-small">Canción</div>
     <input type="radio" name="genero" value="Canción"><br>
 <br>
-    <textarea rows="4" cols="20">Danos tu parecer sobre la cita o lo que su lectura te produjo</textarea><br>
+    <textarea rows="8" cols="40">Danos tu parecer sobre la cita o lo que su lectura te produjo</textarea><br>
 
 <!--Botones-->
-    <input type="submit" value="Enviar">
-    <input type="reset" value="Limpiar">
-    <input type="button" value="Sin acciones">
+    <input class="botones-formularios" type="submit" value="Enviar">
+    <input class="botones-formularios" type="reset" value="Limpiar">
+    <input class="botones-formularios" type="button" value="Sin acciones">
 </fieldset>
 </form>
 </section>
