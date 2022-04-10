@@ -159,11 +159,12 @@ ul {
 .poema {
     grid-column: 3/4;
     grid-row: 1;
-    background-image: linear-gradient(to right, #5f5e5e, white);
+    background-image: linear-gradient(to right, #5f5e5e , white);
+    width: fit-content;
     border: none;
     border-radius: 10px;
-    /*margin-top: 10px;
-    padding-top: 20px;*/
+    display: flex;
+    flex-direction: column;
 }
 
 .main-texto h4 {
@@ -175,7 +176,7 @@ ul {
 }
 
 .main-texto pre {
-    font-style: italic;
+    font-style: normal;
     font-family: 'Fanwood Text';
     flex-wrap: wrap;
 }
