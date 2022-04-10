@@ -163,8 +163,6 @@ ul {
     width: fit-content;
     border: none;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
 }
 
 .main-texto h4 {
@@ -188,20 +186,22 @@ ul {
 }
 
 .saber {
-/*margin-top: 10px;*/
-text-align: left;
+    display: flex;
+    flex-direction: row;
 }
 
 .saber-autor {
     background-color: rgb(95, 94, 94);
     border: none;
     border-radius: 10px;
+    margin-right: 39px;
 }
 
 .saber-obra {
     background-color: rgb(95, 94, 94);
     border: none;
     border-radius: 10px;
+    margin-left: 39px;
 }
 
 .saber a{
