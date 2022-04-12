@@ -2,7 +2,6 @@
     font-family: "Roboto Condensed";
 }
 
-
 .header-1 {
     background-image: url(../resources/Backgrounds/Estanteria.jpg);
     background-position: center;
@@ -20,6 +19,18 @@
 .brand-img {
     width: 80px;
     height: 80px;
+}
+
+.carousel-inner {
+    max-height: 39rem;
+}
+
+.main-container {
+    background-color: #bababa;
+}
+
+.main-bienvenida h2 {
+    font-family: "Fanwood Text";
 }
 
 
