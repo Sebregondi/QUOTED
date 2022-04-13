@@ -6,70 +6,100 @@
         <meta name="keywords" content="CITAS, FRASES, LITERATURA, LIBROS, AUTORES, > NARRATIVA, POESIA, TEATRO, CANCIONES">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="favicon" href="../resources/img/quotesicon.webp">
-        <title>Quoted - Citas entre escritores y lectores</title>
-        <link rel="stylesheet" href="../css/estilos.css">
-        
+        <title>Quoted - Contacto</title>
+        <link rel="stylesheet" href="../css/boot.css">
 
 <!--Link de fuentes-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Hurricane&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-<!--Link de Fontawesome-->b
+<!--Link de Fontawesome-->
 <script src="https://kit.fontawesome.com/8890c32fec.js" crossorigin="anonymous"></script>
-    </head>
+<!--Link de Animate.css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!--Link de Bootstrap-->
+<link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+</head>
 
 <body>
 
-
 <!--COMIENZO DE HEADER-CONTAINER-->
 
-<header id="header-container">
+<header class="container-fluid">
+<div class="header-1 row">
 
-    <div class="logo">
-        <a href="../index.html">
-        <img class="logo-imagen" src="../resources/img/quotedlogo.png" alt="Logo de comillas"></a>
-    </div>
+<!--Logo de header-->
+<div class="logo col-sm-12 col-md-12 text-center col-lg-3 col-xl-3 col-xxl-3">
+    <a href="#">
+        <img class="logo-img" src="../resources/img/quotedlogo.png"  alt="Logo de comillas"></a>
+</div>
 
-    <div class="encabezado">
+<!--Encabezado de header-->
+<div class="encabezado col-sm-12 col-md-12 pt-4 col-lg-6 col-xl-6 col-xxl-6">
+    <h1 class="h1 fs-1 fw-bold text-center">Cada lector es un mundo</h1>
+    
+</div>
 
-        <h1>Citas entre escritores y lectores</h1>
-            <p>Lugar de encuentro entre literatura y sensacion. <br>
-            Te invitamos a compartir una cita literaria y la forma en que te conmovió <br>
-            Porque cada libro se lee de distinta forma en cada época y cada lector es un mundo.</p>
-    </div>
+<!--Botones de redes-->
+<div class="redes col col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3 text-center">
+  <section class="mb-4 pt-4">
+    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+      ><i class="fab fa-facebook-f"></i></a>
 
-    <div class="redes">
-        <button class="ig">
-                <a href="#">
-                    <i class="fa-brands fa-instagram"></i></a>
-                </button>
+    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+      ><i class="fab fa-twitter"></i></a>
+
+    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+      ><i class="fab fa-instagram"></i></a>
+
+    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+      ><i class="fab fa-youtube"></i></a>
+  </section>
+</div>
+
+<!--Barra de navegación-->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-4"> 
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+
+                  <img class="brand-img" src="../resources/img/alt (1).webp" alt="logo alternativo"></a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/makeaquote.html">Hacer una cita</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/quotereading.html">Leer citas</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/aboutus.html">Sobre el proyecto</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contactus.html">Contacto</a>
+                  </li>
+                </ul>
                 
-        <button class="fb">
-                    <a href="#">
-                        <i class="fa-brands fa-facebook-f"></i></a>
-                </button>
-                
-        <button class="tw">
-                    <a href="#">
-                        <i class="fa-brands fa-twitter"></i>      
-                    </a></button>
-                    
-        <button class="yt">
-                    <a href="#">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-        </button>
+              </div>
+            </div>
+          </nav>
     </div>
+</div>
 
-    <div class="navbar">
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/makeaquote.html">Hacer una cita</a></li>
-            <li><a href="#">Leer una cita</a></li>
-            <li><a href="../pages/aboutus.html">Sobre nosotros</a></li>
-            <li><a href="../pages/contactus.html">Contacto</a></li>
-        </ul>
-    </div>
 </header>
 
 <section class="main__header">
@@ -123,41 +153,33 @@
 </section>
 
 <!--COMIENZO DE FOOTER-->
-<footer id="footer-container">
+<footer class="footer-style bg-dark text-center text-white">
+    <div class="container p-4 pb-0">
+      
+    <!--Botones de redes-->     
+      <section class="mb-4">
+        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i></a>
+  
+        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i></a>
+  
+        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i></a>
+  
+        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-youtube"></i></a>
+      </section>
+    </div>
     
-    <div class="footer-logo">
-            <a href="../QUOTED/pages/contactus.html">
-            <img class="footer-img" src="../resources/img/quotedlogo.png" alt="Logo de comillas"></a>
+    <!--Disclaimer-->
+    <div class="text-center p-3 bg-dark" style="background-color: rgba(0, 0, 0, 0.2);">
+        <p>Las citas de <span class="fw-bold text-light">Quoted</span> cumplen con las leyes argentinas de Propiedad Intelectual (Ley 11.723) y de Fomento al Libro y la Lectura (Ley 25.446)</p>
     </div>
-        
-    <div class="footer-disclaimer">
-        <p><b>Quoted es un proyecto literario colaborativo sin fines de lucro.</b></p>
-        <p>Las citas aquí contenidas cumplen con las leyes de Propiedad Intelectual (Ley 11.723) y de Fomento al Libro y la Lectura (Ley 25.446) de Argentina</p>
-    </div>
-
-    <div class="footer-redes">
-        <button class="ig">
-                <a href="#">
-                    <i class="fa-brands fa-instagram"></i></a>
-                </button>
-                
-        <button class="fb">
-                    <a href="#">
-                        <i class="fa-brands fa-facebook-f"></i></a>
-                </button>
-                
-        <button class="tw">
-                    <a href="#">
-                        <i class="fa-brands fa-twitter"></i>      
-                    </a></button>
-                    
-        <button class="yt">
-                    <a href="#">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-        </button>
-    </div>
-</footer>
-
-</body>
-</html>
+  </footer>
+  
+  <!--Link de JS (Bootstrap)-->
+  <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+  
+  </body>
+  </html>
