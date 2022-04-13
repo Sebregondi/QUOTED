@@ -98,52 +98,63 @@
 
 <section id="makeaQuote">
 
-<div class="container">       
-    <form method="get" class="formulariocita">
-    <!--Introducir cita-->
-      <fieldset>
-        <legend class="text-center fs-3 fw-bold">Subir una cita</legend>
+<div class="container bg-dark">       
+  <form method="get" class="formulariocita">
+    <fieldset>
+      <legend class="text-center fs-3 fw-bold bg-secondary">Subir una cita</legend>
 
-        <div class="form-group row mb-3">
-          <label for="nombre">Nombre:</label>
-          <input class="form-control" type="text" name="nombre" placeholder="Tu nombre">
+      <div class="row mb-1 bg-dark">
+        <label for="nombre" class="col-sm-2 col-form-label bg-secondary border-start border-5 border-dark">Nombre:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputMail" placeholder="Tu nombre">
+        </div>
+      </div>
 
-          <label for="autor">Autor/a:</label>
-          <input class="form-control" type="text" name="autor" placeholder="Autor/a de la cita">
+      <div class="row mb-1 bg-dark">
+        <label for="autor" class="col-sm-2 col-form-label bg-secondary border-start border-5 border-dark">Autor/a:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputAutor" placeholder="Autor/a de la cita">
+        </div>
+      </div>
 
-          <label for="libro">Libro:</label>
-          <input class="form-control" type="text" name="libro" placeholder="Indica el origen de la cita">
-        </div>    
-        
-        <div class="form-group mb-3">
-        <textarea class="form-control" rows="8">Escribe tu cita preferida</textarea>
-        </div>  
+      <div class="row mb-1 bg-dark">
+        <label for="libro" class="col-sm-2 col-form-label bg-secondary border-start border-5 border-dark">Obra:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputLibro" placeholder="Indique el origen de la cita">
+        </div>
+      </div>
+      
+      <div class="row">
+        <textarea class="form-control border-start border-5 border-dark" rows="8" placeholder="Escribe tu cita preferida"></textarea>
+      </div>  
           
         
- 
+
 <!--Catalogación-->
-<div class="form-group mb-3">
-    <label for="Género">Especifique el género del texto:</label>
-    <select class="form-select" name="Género" id="genero">
-        <option value="Narrativa">Narrativa</option>
-        <option value="Poesía">Poesía</option>
-        <option value="Teatro">Teatro</option>
-        <option value="Canción">Canción</option>
-    </select>
-</div>
+      <div class="row form-group mb-3 bg-secondary">
+      <label for="Género">Especifique el género del texto:</label>
+
+        <select class="form-select" name="Género" id="genero">
+          <option value="Narrativa">Narrativa</option>
+          <option value="Poesía">Poesía</option>
+          <option value="Teatro">Teatro</option>
+          <option value="Canción">Canción</option>
+        </select>
+      </div>
 
 <textarea class="form-control" rows="5">Danos tu parecer sobre la cita o lo que su lectura te produjo</textarea>
 
 <!--Botones-->
-    <div class="form-group mt-2">
+      <div class="form-group mt-2">
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpiar">
         <input type="button" value="Sin acciones">
-    </div>
+      </div>
 
-</fieldset>
-</form>
+    </fieldset>
+  </form>
 </div>
+
 </section>
 
 <!--COMIENZO DE FOOTER-->

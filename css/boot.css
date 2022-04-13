@@ -30,7 +30,11 @@
 }
 
 .main-container {
-    background-color: #bababa;
+    background-color: #6c757d;
+}
+
+#makeaQuote {
+    background-color: #6c757d;
 }
 
 .main-bienvenida h2 {
