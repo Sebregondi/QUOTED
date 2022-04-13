@@ -43,6 +43,18 @@
     background-size: cover;
 }
 
+/*Estilos para form de contacto*/
+.header {
+    color: #212529;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #212529;
+}
+
 
 
 @media (max-width: 991.98px) {
