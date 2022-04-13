@@ -63,37 +63,29 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-4"> 
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
-
                   <img class="brand-img" src="../resources/img/alt (1).webp" alt="logo alternativo"></a>
 
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              
+              </button>             
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                   </li>
-
                   <li class="nav-item">
                     <a class="nav-link" href="../pages/makeaquote.html">Hacer una cita</a>
                   </li>
-
                   <li class="nav-item">
                     <a class="nav-link" href="../pages/quotereading.html">Leer citas</a>
                   </li>
-                  
                   <li class="nav-item">
                     <a class="nav-link" href="../pages/aboutus.html">Sobre el proyecto</a>
                   </li>
-
                   <li class="nav-item">
                     <a class="nav-link" href="../pages/contactus.html">Contacto</a>
                   </li>
                 </ul>
-                
               </div>
             </div>
           </nav>
@@ -106,40 +98,52 @@
 
 <section id="makeaQuote">
 
-  <div class="hacerCita container"></div>        
+<div class="container">       
     <form method="get" class="formulariocita">
     <!--Introducir cita-->
       <fieldset>
-        <legend>Subir una cita</legend>
+        <legend class="text-center fs-3 fw-bold">Subir una cita</legend>
 
+        <div class="form-group row mb-3">
           <label for="nombre">Nombre:</label>
           <input class="form-control" type="text" name="nombre" placeholder="Tu nombre">
-          <textarea rows="8" cols="40">Escribe tu cita preferida</textarea><br>
-    
+
           <label for="autor">Autor/a:</label>
           <input class="form-control" type="text" name="autor" placeholder="Autor/a de la cita">
-          <label for="libro">Libro:</label><br>
+
+          <label for="libro">Libro:</label>
           <input class="form-control" type="text" name="libro" placeholder="Indica el origen de la cita">
-
+        </div>    
+        
+        <div class="form-group mb-3">
+        <textarea class="form-control" rows="8">Escribe tu cita preferida</textarea>
+        </div>  
+          
+        
+ 
 <!--Catalogación-->
-      <b>Indica el género de la cita</b>
-<div>Narrativa</div>
-    <input type="checkbox" name="genero" value="Narrativa">
-    <div>Poesía</div>
-    <input type="checkbox" name="genero" value="Poesía">
-    <div>Teatro</div>
-    <input type="checkbox" name="genero" value="Teatro">
-    <div>Canción</div>
-    <input type="checkbox" name="genero" value="Canción">
+<div class="form-group mb-3">
+    <label for="Género">Especifique el género del texto:</label>
+    <select class="form-select" name="Género" id="genero">
+        <option value="Narrativa">Narrativa</option>
+        <option value="Poesía">Poesía</option>
+        <option value="Teatro">Teatro</option>
+        <option value="Canción">Canción</option>
+    </select>
+</div>
 
-    <textarea class="form-control" rows="8" cols="40">Danos tu parecer sobre la cita o lo que su lectura te produjo</textarea><br>
+<textarea class="form-control" rows="5">Danos tu parecer sobre la cita o lo que su lectura te produjo</textarea>
 
 <!--Botones-->
-    <input class="botones-formularios" type="submit" value="Enviar">
-    <input class="botones-formularios" type="reset" value="Limpiar">
-    <input class="botones-formularios" type="button" value="Sin acciones">
+    <div class="form-group mt-2">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+        <input type="button" value="Sin acciones">
+    </div>
+
 </fieldset>
 </form>
+</div>
 </section>
 
 <!--COMIENZO DE FOOTER-->
