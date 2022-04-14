@@ -59,6 +59,112 @@
     color: #212529;
 }
 
+/*Estilos para Slider Quote*/
+
+#kudo-wrap{
+    width: 100%; 
+    height: 810px;
+    margin: 0 auto; 
+    background-image: url(https://s3.amazonaws.com/tlcmedicalmassage/wp-content/uploads/WaterStandingWave.jpg);
+    background-size: cover;
+  }
+  .adj-layer {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 50px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+  .quote-content{
+    border: 0;
+    margin: 0;
+    padding: 5px 45px 0 40px;
+    background: none;
+    color: gray;
+    font-family: Georgia, serif;
+    font-size: 1.5em;
+    font-style: italic;
+    line-height: 1.4 !important;
+    margin: 0 0 0 7%;
+    position: relative;
+    text-shadow: 0 1px #fff;
+    text-align: left;
+    z-index: 1;
+    width: 90%;
+  }
+  .quote-content cite{
+    color: gray;
+    display: block;
+    font-size: .5em;
+  }
+  .quote-content cite > span{
+    color: #39BBCE;
+    font-size: .9em;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 1px white;
+  }
+  img.avatar{
+    border: 3px solid rgba(57,187,206,0.8);
+    border-radius: 50%;
+  }
+  
+  #quote-carousel {
+      padding: 0 10px 30px 10px;
+      margin-top: 60px;
+  }
+  #quote-carousel .carousel-control { /* left right arrows */
+      background: none;
+      color: #CACACA;
+      font-size: 2.3em;
+      text-shadow: 0 1px white;
+      margin-top: 120px;
+  }
+  #quote-carousel .carousel-indicators {
+      position: relative;
+      right: 50%;
+      top: auto;
+      bottom: 0px;
+      margin-top: 20px;
+      margin-right: -19px;
+  }
+  #quote-carousel .carousel-indicators li {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      opacity: 0.4;
+      overflow: hidden;
+      transition: all .4s ease-in;
+      vertical-align: middle;
+  }
+  #quote-carousel .carousel-indicators .active {
+      width: 128px;
+      height: 128px;
+      opacity: 1;
+      transition: all .2s;
+  }
+  .item blockquote {
+      border-left: none;
+      margin: 0;
+  }
+  .item blockquote p:before { /* quotemarks */
+    content: '\201C';
+    color: #39BBCE;
+    font-size: 7.5em;
+    font-weight: 700;
+    opacity: .3;
+    position: absolute;
+    top: -.4em;
+    left: .05em;
+    text-shadow: none;
+    z-index: -300;
+  }
 
 
 @media (max-width: 991.98px) {
