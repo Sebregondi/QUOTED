@@ -103,21 +103,46 @@
 </header>
 
 <!--COMIENZO DE MAIN-->
-<section class="main-about">
-    <!--Información sobre la página-->
-    <div class="bajada">
-    <h2>Sobre Quoted</h2>
-    <p>Te contamos un poco acerca de nuestra adicción</p></div>
-    <!--
-        <img src="../resources/Backgrounds/Read.jpg" alt="Libros sobre libros" width="50%" height="50%"><br>-->
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quisquam animi perspiciatis aliquid odit laudantium magni molestias deserunt. Laborum quidem rem temporibus veritatis saepe fugiat quibusdam, sed repudiandae consequatur vel.<br>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quibusdam minus deserunt sapiente nam numquam dolores, tempora ut impedit ex adipisci, autem, consectetur beatae dolor! Soluta illo ab obcaecati amet.<br>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquid fugiat non aliquam libero id pariatur atque. Blanditiis exercitationem, doloribus quam voluptas similique facere ab dignissimos, velit est ratione suscipit.<br>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima eveniet quam excepturi eius voluptates commodi accusamus error cupiditate similique cum cumque, dolorem suscipit magnam nobis hic, placeat soluta ipsa ab!<br>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum minus recusandae dolores est ea, nobis porro iusto pariatur corporis asperiores vel temporibus voluptates autem aliquam tempora? Itaque dignissimos enim ratione.<br>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat tenetur a, vel rem quidem eius veniam atque eaque vitae, quod autem ipsa ex expedita ducimus. Temporibus amet aspernatur necessitatibus molestiae?<br>
-    </p>
-</section>
+
+<main id="main-about" class="main-container container-fluid">
+  <div class="row">
+
+<!--Texto de bienvenida-->
+  <section class="w-50 mx-auto text-center pb-5" id="bienvenida">
+    <div class="col animate__animated animate__backInLeft pt-4">
+        <p class="p-3 fs-4 border-top border-bottom border-3">Los citadinos de <span class="fs-3 fw-bold text-light"> Quoted </span> nos reunimos en esta Babel digital para continuar el legado de Alejandría. Cultivamos el arte de la cita literaria de manera horizontal. Somos los <span class="fs-3 fw-bold text-light"> copistas </span> del nuevo milenio.</p>
+    </div>
+  </section>  
+
+<!--COMIENZO CALESITA-->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img src="../resources/Backgrounds/Read.jpg" class="d-block w-100" alt="Emma Stone en The Favourite">
+    </div>
+    <div class="carousel-item">
+      <img src="../resources/Backgrounds/ggt.jpg" class="d-block w-100" alt="Jon Hamm en Mad Men">
+    </div>
+    <div class="carousel-item">
+      <img src="../resources/Backgrounds/Books.jpg" class="d-block w-100" alt="Adam Driver en Paterson">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!--FIN CALESITA-->
+</main>
 
 <!--COMIENZO DE FOOTER-->
 <footer class="footer-style bg-dark text-center text-white">
