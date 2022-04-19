@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="favicon" href="../resources/img/quotesicon.webp">
         <title>Quoted - Contacto</title>
-        <link rel="stylesheet" href="../css/boot.css">
+        <link rel="stylesheet" href="../css/estilos.css">
 
 <!--Link de fuentes-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,14 +30,13 @@
 
 <!--Logo de header-->
 <div class="logo col-sm-12 col-md-12 text-center col-lg-3 col-xl-3 col-xxl-3">
-    <a href="#">
+    <a href="../index.html">
         <img class="logo-img" src="../resources/img/quotedlogo.png"  alt="Logo de comillas"></a>
 </div>
 
 <!--Encabezado de header-->
 <div class="encabezado col-sm-12 col-md-12 pt-4 col-lg-6 col-xl-6 col-xxl-6">
-    <h1 class="h1 fs-1 fw-bold text-center">Cada lector es un mundo</h1>
-    
+  <h1 class="h1 fs-1 fw-bold text-center animate__animated animate__flash">Cada lector es un mundo</h1>   
 </div>
 
 <!--Botones de redes-->
@@ -63,9 +62,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-4"> 
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
-
                   <img class="brand-img" src="../resources/img/alt (1).webp" alt="logo alternativo"></a>
-
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -110,17 +107,17 @@
   <form id="formulario-contacto">
 
     <div class="mb-3">
-      <label class="form-label" for="nombre">Nombre:</label>
-      <input class="form-control" id="nombre" type="text" placeholder="Escribe tu nombre"/>
+      <label class="form-label fw-bold" for="nombre">Nombre:</label>
+      <input class="form-nombre form-control" id="nombre" type="text" placeholder="Escribe tu nombre"/>
+    </div>
+
+    <div class="formulario mb-3">
+      <label class="form-label fw-bold" for="email">Correo electrónico</label>
+      <input class="form-mail form-control" id="email" type="email" placeholder="ejemplo@tumail.com">
     </div>
 
     <div class="mb-3">
-      <label class="form-label" for="email">Correo electrónico</label>
-      <input class="form-control" id="email" type="text" placeholder="ejemplo@tumail.com">
-    </div>
-
-    <div class="mb-3">
-      <label class="form-label" for="comentario">Comentario:</label>
+      <label class="form-label fw-bold" for="comentario">Comentario:</label>
       <textarea class="form-control" id="comentario" type="text" placeholder="Tu comentario es bienvenido" style="height: 10rem;"></textarea>
     </div>
 

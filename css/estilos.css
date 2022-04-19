@@ -21,6 +21,11 @@
     height: 80px;
 }
 
+.brand-img:hover {
+    width: 90px;
+    height: 90px;
+}
+
 .redes i {
     color: black;
 }
@@ -71,7 +76,15 @@
     color: #212529;
 }
 
-/*Estilos para Slider Quote*/
+#formulario-contacto .form-mail:invalid {
+    background-color: rgb(87, 87, 87);
+}
+
+.mail-cita .form-mail:invalid {
+    background-color: rgb(87, 87, 87);
+}
+
+/*Estilos para Acordeón de citas*/
 
 #kudo-wrap{
     width: 100%; 
@@ -194,9 +207,9 @@
     }
 }
 
-@media (max-width: 1199.98px) {}
+/*@media (max-width: 1199.98px) {}
 
-/* MEDIA QUERIES BREAKPOINTS DE BOOTSTRAP
+ MEDIA QUERIES BREAKPOINTS DE BOOTSTRAP
 // `sm` applies to x-small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { ... }
 
