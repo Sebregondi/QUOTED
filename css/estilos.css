@@ -18,6 +18,11 @@
     height: 40px;
 }
 
+#navbarSupportedContent {
+    background-color: black;
+    text-align: center;
+}
+
 .brand-img {
     width: 80px;
     height: 80px;
@@ -101,8 +106,17 @@
     .navbar {
         height: 60px;
     }
-}
 
+    .collapse {
+        position: relative;
+        z-index: 1;
+    }
+
+    .accordion-item {
+        position: relative;
+        z-index: 0;
+    }
+}
 
 
 /*MEDIA QUERIES BREAKPOINTS DE BOOTSTRAP
