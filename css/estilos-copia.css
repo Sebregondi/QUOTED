@@ -2,12 +2,7 @@
     font-family: "Roboto Condensed";
 }
 
-//VARIABLES
-$color-body: #6c757d;
-$title-font: 'Fanwood Text';
-$standar-font: 'Roboto Condensed';
-
-//ESTILOS PARA HEADER y FOOTER
+/*ESTILOS PARA HEADER y FOOTER*/
 
 .header-1 {
     background-image: url(../resources/Backgrounds/Estanteria.jpg);
@@ -16,7 +11,7 @@ $standar-font: 'Roboto Condensed';
 }
 
 .h1 {
-    font-family: $title-font;
+    font-family: "Fanwood Text";
 }
 
 .navbar {
@@ -24,17 +19,22 @@ $standar-font: 'Roboto Condensed';
 }
 
 #navbarSupportedContent {
-    background-color: #212529;
+    background-color: black;
     text-align: center;
 }
 
 .brand-img {
     width: 80px;
     height: 80px;
-    &:hover {
-        width: 90px;
-        height: 90px;  
-    }
+}
+
+.brand-img:hover {
+    width: 90px;
+    height: 90px;
+}
+
+.redes i {
+    color: black;
 }
 
 .footer-style {
@@ -46,52 +46,57 @@ $standar-font: 'Roboto Condensed';
 /*ESTILOS PARA LOS MAIN*/
 
 .main-container {
-    background-color: $color-body;
+    background-color: #6c757d;
 }
 
 #main-about {
-    background-color: $color-body;
+    background-color: #6c757d; 
 }
 
 #main-contacto {
-    background-color: $color-body;
+    background-color: #6c757d;
 }
 
 #main-read {
-    background-color: $color-body;
+    background-color: #6c757d;
 }
 
 #makeaQuote {
-    background-color: $color-body;
+    background-color: #6c757d;
 }
 
 .main-bienvenida h2 {
-    font-family: $title-font;
+    font-family: "Fanwood Text";
 }
 
-//Estilos para formularios
 
+/*FORMULARIO DE CONTACTO*/
 .header {
     color: #212529;
     font-size: 27px;
     padding: 10px;
 }
 
+.bigicon {
+    font-size: 35px;
+    color: #212529;
+}
+
+#formulario-contacto .form-mail:invalid {
+    background-color: rgb(87, 87, 87);
+}
+
 .mail-cita .form-mail:invalid {
     background-color: rgb(87, 87, 87);
 }
 
-.subir-cita {
-    color: white;
-}
-
-//ESTILOS PARA CAROUSEL
+/*ESTILOS PARA CAROUSEL*/
 
 .carousel-inner {
     max-height: 39rem;
 }
 
-//MEDIA QUERIES
+/*MEDIA QUERIES*/
 @media (max-width: 991.98px) {
 
     .brand-img {
@@ -112,25 +117,25 @@ $standar-font: 'Roboto Condensed';
         z-index: 0;
     }
 
-    .encabezado h1 {
+.encabezado h1 {
     display: none;
-    }
+}
 
 }
 
 
-//MEDIA QUERIES BREAKPOINTS DE BOOTSTRAP
+/*MEDIA QUERIES BREAKPOINTS DE BOOTSTRAP
 // `sm` applies to x-small devices (portrait phones, less than 576px)
-//@media (max-width: 575.98px) { ... }
+@media (max-width: 575.98px) { ... }
 
 // `md` applies to small devices (landscape phones, less than 768px)
-//@media (max-width: 767.98px) { ... }
+@media (max-width: 767.98px) { ... }
 
 // `lg` applies to medium devices (tablets, less than 992px)
-//@media (max-width: 991.98px) { ... }
+@media (max-width: 991.98px) { ... }
 
 // `xl` applies to large devices (desktops, less than 1200px)
-//@media (max-width: 1199.98px) { ... }
+@media (max-width: 1199.98px) { ... }
 
 // `xxl` applies to x-large devices (large desktops, less than 1400px)
-//@media (max-width: 1399.98px) { ... }
+@media (max-width: 1399.98px) { ... }*/

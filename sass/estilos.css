@@ -25,6 +25,7 @@
   width: 80px;
   height: 80px;
 }
+
 .brand-img:hover {
   width: 90px;
   height: 90px;
@@ -68,7 +69,7 @@
 }
 
 .mail-cita .form-mail:invalid {
-  background-color: rgb(87, 87, 87);
+  background-color: #575757;
 }
 
 .subir-cita {
@@ -83,24 +84,19 @@
   .brand-img {
     display: none;
   }
-
   .navbar {
     height: 60px;
   }
-
   .collapse {
     position: relative;
     z-index: 1;
   }
-
   .accordion-item {
     position: relative;
     z-index: 0;
   }
-
   .encabezado h1 {
     display: none;
   }
 }
-
 /*# sourceMappingURL=estilos.css.map */
