@@ -3,15 +3,21 @@
 }
 
 /*VARIABLES*/
+$standar-font: 'Roboto Condensed';
+$title-font: 'Fanwood Text';
+
+/*Mapa paleta de colores*/
 $paleta: (
 'cuerpo': #6c757d,
 'marcos': #212529,
 'invalido': rgb(87, 87, 87),
 'blanco': white );
 
-$standar-font: 'Roboto Condensed';
-$title-font: 'Fanwood Text';
-
+/*Mixin de tamaño*/
+@mixin tamaños {
+    width: 80px;
+    height: 80px;
+}
 
 
 /*ESTILOS PARA HEADER y FOOTER*/
@@ -40,8 +46,7 @@ $title-font: 'Fanwood Text';
 }
 
 .brand-img {
-    width: 80px;
-    height: 80px;
+    @include tamaños;
     &:hover {
         width: 90px;
         height: 90px;  

@@ -1,9 +1,11 @@
+@charset "UTF-8";
 * {
   font-family: "Roboto Condensed";
 }
 
 /*VARIABLES*/
-
+/*Mapa paleta de colores*/
+/*Mixin de tamaño*/
 /*ESTILOS PARA HEADER y FOOTER*/
 .header-1, .footer-style {
   background-image: url(../resources/Backgrounds/Estanteria.jpg);
