@@ -2,7 +2,10 @@
   font-family: "Roboto Condensed";
 }
 
-.header-1 {
+/*VARIABLES*/
+
+/*ESTILOS PARA HEADER y FOOTER*/
+.header-1, .footer-style {
   background-image: url(../resources/Backgrounds/Estanteria.jpg);
   background-position: center;
   background-size: cover;
@@ -30,30 +33,8 @@
   height: 90px;
 }
 
-.footer-style {
-  background-image: url(../resources/Backgrounds/Estanteria.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
 /*ESTILOS PARA LOS MAIN*/
-.main-container {
-  background-color: #6c757d;
-}
-
-#main-about {
-  background-color: #6c757d;
-}
-
-#main-contacto {
-  background-color: #6c757d;
-}
-
-#main-read {
-  background-color: #6c757d;
-}
-
-#makeaQuote {
+.main-container, #makeaQuote, #main-read, #main-contacto, #main-about {
   background-color: #6c757d;
 }
 
@@ -61,6 +42,7 @@
   font-family: "Fanwood Text";
 }
 
+/*Estilos para formularios*/
 .header {
   color: #212529;
   font-size: 27px;
@@ -75,10 +57,12 @@
   color: white;
 }
 
+/*ESTILOS PARA CAROUSEL*/
 .carousel-inner {
   max-height: 39rem;
 }
 
+/*MEDIA QUERIES*/
 @media (max-width: 991.98px) {
   .brand-img {
     display: none;

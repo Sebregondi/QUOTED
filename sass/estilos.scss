@@ -1,18 +1,29 @@
 * {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed';
 }
 
-//VARIABLES
-$color-body: #6c757d;
-$title-font: 'Fanwood Text';
-$standar-font: 'Roboto Condensed';
+/*VARIABLES*/
+$paleta: (
+'cuerpo': #6c757d,
+'marcos': #212529,
+'invalido': rgb(87, 87, 87),
+'blanco': white );
 
-//ESTILOS PARA HEADER y FOOTER
+$standar-font: 'Roboto Condensed';
+$title-font: 'Fanwood Text';
+
+
+
+/*ESTILOS PARA HEADER y FOOTER*/
 
 .header-1 {
     background-image: url(../resources/Backgrounds/Estanteria.jpg);
     background-position: center;
     background-size: cover;
+}
+
+.footer-style {
+    @extend .header-1;          
 }
 
 .h1 {
@@ -24,7 +35,7 @@ $standar-font: 'Roboto Condensed';
 }
 
 #navbarSupportedContent {
-    background-color: #212529;
+    background-color: map-get($map: $paleta, $key: 'marcos');
     text-align: center;
 }
 
@@ -37,61 +48,56 @@ $standar-font: 'Roboto Condensed';
     }
 }
 
-.footer-style {
-    background-image: url(../resources/Backgrounds/Estanteria.jpg);
-    background-position: center;
-    background-size: cover;
-}
 
 /*ESTILOS PARA LOS MAIN*/
 
 .main-container {
-    background-color: $color-body;
+    background-color: map-get($map: $paleta, $key: 'cuerpo');
 }
 
 #main-about {
-    background-color: $color-body;
+    @extend .main-container;
 }
 
 #main-contacto {
-    background-color: $color-body;
+    @extend .main-container;
 }
 
 #main-read {
-    background-color: $color-body;
+    @extend .main-container;
 }
 
 #makeaQuote {
-    background-color: $color-body;
+    @extend .main-container;
 }
 
 .main-bienvenida h2 {
     font-family: $title-font;
 }
 
-//Estilos para formularios
+/*Estilos para formularios*/
 
 .header {
-    color: #212529;
+    color: map-get($map: $paleta, $key: 'marcos');
     font-size: 27px;
     padding: 10px;
 }
 
 .mail-cita .form-mail:invalid {
-    background-color: rgb(87, 87, 87);
+    background-color: map-get($map: $paleta, $key: 'invalido');
 }
 
 .subir-cita {
-    color: white;
+    color: map-get($map: $paleta, $key: 'blanco');
 }
 
-//ESTILOS PARA CAROUSEL
+/*ESTILOS PARA CAROUSEL*/
 
 .carousel-inner {
     max-height: 39rem;
 }
 
-//MEDIA QUERIES
+/*MEDIA QUERIES*/
 @media (max-width: 991.98px) {
 
     .brand-img {
